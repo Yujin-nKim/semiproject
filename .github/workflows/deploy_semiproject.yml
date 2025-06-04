@@ -89,7 +89,7 @@ jobs:
           port: 22
           script: |
             docker compose -f ./compose-semiproject.yaml down  
-            docker image rm -f siestageek/semiproject
+            docker image rm -f yujinnkim/semiproject
             docker compose -f ./compose-semiproject.yaml up -d
             sleep 15
             
